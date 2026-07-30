@@ -76,7 +76,7 @@ final class CoffeeIconView: NSView {
         let current = (fillMask.presentation() ?? fillMask).startPoint.y
 
         if animated {
-            NSSound(named: "Pop")?.play()
+            NSSound(named: "Bottle")?.play()
         }
 
         CATransaction.begin()
