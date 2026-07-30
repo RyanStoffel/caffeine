@@ -19,11 +19,6 @@ No account needed, no telemetry, no background noise.
 brew install ryanstoffel/tap/caffeine
 ```
 
-Or install via official Homebrew Cask (once merged):
-```sh
-brew install --cask caffeine
-```
-
 ---
 
 ## Features
