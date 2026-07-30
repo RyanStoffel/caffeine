@@ -1,27 +1,54 @@
-# Caffeine
+# Caffeine ☕
 
-A tiny, free and open source macOS menu bar app that keeps your display awake.
+A tiny, lightweight, free and open source macOS menu bar app that keeps your Mac's display awake indefinitely.
 
-Click the coffee cup in the menu bar to toggle it:
+Click the coffee cup in the menu bar (or launch from Raycast/Spotlight) to toggle:
 
-- **Filled cup** — active, the display stays on (runs `caffeinate -d`) with a liquid rise & pop animation
-- **Empty cup** — off, nothing running
+- ☕ **Filled cup** — Active. Keeps your screen awake using native macOS `caffeinate -d` with a smooth liquid rise animation.
+- 🫖 **Empty cup** — Inactive. Standard system sleep settings apply.
 
-Right-click the icon to quit. No accounts, no settings, no background nonsense.
+No account needed, no telemetry, no background noise.
 
-## Build & Install
+---
 
-Requires Xcode command line tools.
+## Installation
+
+### Homebrew (Recommended)
 
 ```sh
-cd ~/Developer/personal/caffeine
-./build.sh            # builds .build/Caffeine.app
-./build.sh --install  # builds and copies to /Applications
+brew install ryanstoffel/tap/caffeine
 ```
 
-Then launch Caffeine from `/Applications` or Spotlight. To start it automatically at login, add it
-under **System Settings → General → Login Items**.
+Or install via official Homebrew Cask (once merged):
+```sh
+brew install --cask caffeine
+```
+
+---
+
+## Features
+
+- **Liquid Fill Animation:** Liquid fills or drains smoothly inside the cup icon when toggling.
+- **Steam Wisps & Sound:** Brief steam puff on activation with audio feedback.
+- **Raycast & Spotlight Ready:** Type "Caffeine" in Raycast or Spotlight and hit `Enter` to toggle instantly from your keyboard.
+- **Awake Timer:** Right-click the menu bar icon to view how long your screen has been kept awake.
+- **Launch at Login:** Toggle auto-start at login right from the menu bar menu.
+- **Light & Dark Mode:** Adapts automatically to your macOS system theme.
+
+---
+
+## Build from Source
+
+Requires macOS 13.0+ and Xcode Command Line Tools.
+
+```sh
+git clone https://github.com/RyanStoffel/caffeine.git
+cd caffeine
+./build.sh --install
+```
+
+---
 
 ## License
 
-MIT
+[MIT](LICENSE)
