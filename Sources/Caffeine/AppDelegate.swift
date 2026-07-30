@@ -27,6 +27,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         stop()
     }
 
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        isActive ? stop() : start()
+        updateIcon(animated: true)
+        return false
+    }
+
     @objc private func handleClick() {
         if NSApp.currentEvent?.type == .rightMouseUp {
             showMenu()
