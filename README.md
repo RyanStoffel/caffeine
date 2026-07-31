@@ -1,13 +1,13 @@
 # Caffeine ☕
 
-A tiny, lightweight, free and open source macOS menu bar app that keeps your Mac's display awake indefinitely.
+A tiny, free, open source macOS menu bar app that keeps your Mac's display awake indefinitely.
 
 Click the coffee cup in the menu bar to toggle:
 
-- ☕ **Filled cup** — Active. Keeps your screen awake using native macOS `caffeinate -d` with a smooth liquid rise animation.
-- 🫖 **Empty cup** — Inactive. Standard system sleep settings apply.
+- ☕ **Filled cup** — Active. Keeps your screen awake using the native macOS `caffeinate -d` command, with a liquid rise animation.
+- 🫖 **Empty cup** — Inactive. Your normal system sleep settings apply.
 
-No account needed, no telemetry, no background noise.
+No account, no telemetry, no background noise.
 
 ---
 
@@ -19,15 +19,17 @@ No account needed, no telemetry, no background noise.
 brew install ryanstoffel/tap/caffeine
 ```
 
+Since Caffeine isn't notarized, macOS will block it the first time you open it. To get past this, go to **System Settings > Privacy & Security**, scroll down to the message about Caffeine, and click **Open Anyway**.
+
 ---
 
 ## Features
 
-- **Liquid Fill Animation:** Liquid fills or drains smoothly inside the cup icon when toggling.
-- **Steam Wisps & Sound:** Brief steam puff on activation with audio feedback.
-- **Awake Timer:** Right-click the menu bar icon to view how long your screen has been kept awake.
-- **Launch at Login:** Toggle auto-start at login right from the menu bar menu.
-- **Light & Dark Mode:** Adapts automatically to your macOS system theme.
+- **Liquid fill animation:** Liquid fills or drains inside the cup icon when you toggle.
+- **Steam wisps & sound:** A steam puff and audio cue on activation.
+- **Awake timer:** Right-click the menu bar icon to see how long your screen has been kept awake.
+- **Launch at login:** Toggle auto-start from the menu bar menu.
+- **Light & dark mode:** Adapts to your macOS system theme.
 
 ---
 
