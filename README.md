@@ -27,7 +27,8 @@ Since Caffeine isn't notarized, macOS will block it the first time you open it. 
 
 - **Liquid fill animation:** Liquid fills or drains inside the cup icon when you toggle.
 - **Steam wisps & sound:** A steam puff and audio cue on activation.
-- **Awake timer:** Right-click the menu bar icon to see how long your screen has been kept awake.
+- **Keep awake with lid closed:** Optionally keep your Mac running with the lid shut — handy for downloads, syncs, or an external display. Enable it from the menu; macOS asks for your password once, and normal sleep is restored when you turn it off or quit.
+- **Awake timer:** Right-click the menu bar icon to see how long your Mac has been kept awake.
 - **Launch at login:** Toggle auto-start from the menu bar menu.
 - **Light & dark mode:** Adapts to your macOS system theme.
 
